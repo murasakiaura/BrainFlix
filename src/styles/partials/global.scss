@@ -1,0 +1,204 @@
+//primary color
+$primary-color1: #323232;
+$primary-color2: #0095ff;
+$primary-color3: #afafaf;
+$primary-color4: #ffffff;
+
+//secondary color
+$secondary-color1: #000000;
+$secondary-color2: #0065ad;
+$secondary-color3: #e1e1e1;
+$secondary-color4: #fafafa;
+
+//screen
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
+
+//display
+$display: flex;
+
+//font
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../../assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+$font-size1: 33px;
+$font-size2: 24px;
+$font-size3: 14px;
+$font-size4: 13px;
+$font-size5: 12px;
+$font-size7: 10px;
+
+$line-height1: 44px;
+$line-height2: 32px;
+$line-height3: 22px;
+$line-height4: 20px;
+$line-height5: 18px;
+
+body {
+  font-family: "Avenir Next";
+}
+
+h1 {
+  font-family: "Avenir Next";
+  font-weight: 700;
+}
+
+h2 h3 {
+  font-family: "Avenir Next";
+  font-weight: 700;
+}
+
+h4 a {
+  font-family: "Avenir Next";
+  font-weight: 400;
+}
+
+p {
+  font-family: "Avenir Next";
+  font-weight: 400;
+}
+
+input {
+  font-family: "Avenir Next";
+  font-weight: 400;
+}
+
+textarea {
+  font-family: "Avenir Next";
+  font-weight: 400;
+}
+
+button {
+  font-family: "Avenir Next";
+  font-weight: 600;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
