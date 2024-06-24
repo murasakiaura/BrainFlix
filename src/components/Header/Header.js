@@ -11,17 +11,21 @@ const Header = () => {
         <img src={logo} />
       </div>
 
-      <div class="header__searchcontainer">
-        <div class="header__searchbar">
-          <img class="header__searchbar--icon" src={searchicon} />
-          <h4 class="header__searchbar--text">Search</h4>
+      <div class="header__searchContainer">
+        <div class="header__searchBar">
+          <img class="header__searchBar--icon" src={searchicon} />
+          <h4 class="header__searchBar--text">Search</h4>
         </div>
-        <img class="header__profile" src={profile} />
-      </div>
 
-      <div class="header__uploadbar">
-        <img src={uploadicon} />
-        <h3 class="header__uploadbar--text">UPLOAD</h3>
+        <img class="header__profile phone" src={profile} />
+      </div>
+      <div class="header__profileAndUploadBar">
+        <img class="header__profile tablet" src={profile} />
+
+        <div class="header__uploadBar">
+          <img src={uploadicon} />
+          <h3 class="header__uploadBar--text">UPLOAD</h3>
+        </div>
       </div>
     </header>
   );
