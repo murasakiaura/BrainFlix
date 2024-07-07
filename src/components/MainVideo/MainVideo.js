@@ -39,8 +39,6 @@ function convertDate(timestamp) {
             </div>
           </div>
 
-
-
           <div className="mainvideo__text">
             <p>{video.description}</p>
           </div>
