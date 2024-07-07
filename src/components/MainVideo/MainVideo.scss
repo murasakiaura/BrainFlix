@@ -1,0 +1,128 @@
+@use "../../styles/partials/global.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+
+.mainvideo {
+  display: $display;
+  flex-direction: column;
+  position: relative;
+  padding: 0.5rem 0 1.5rem 0;
+
+  @include tablet {
+    padding: 1rem 0 2rem 0;
+  }
+
+  &__video {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    padding: 1rem 1rem 1rem 1rem;
+    line-height: 130%;
+
+    @include tablet {
+      padding: 2.25rem 1.5rem 2.25rem 1.5rem;
+    }
+
+    @include desktop {
+      padding: 2rem 0 2rem 7rem;
+    }
+  }
+  &__details {
+    display: $display;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 3rem 0.5rem 0;
+    margin: 0 1rem 0 1rem;
+    border-top: solid 0.063rem $secondary-color3;
+    border-bottom: solid 0.063rem $secondary-color3;
+
+    @include tablet {
+      margin: 0 1.5rem 0 1.5rem;
+      padding: 0;
+      border-top: none;
+      border-bottom: solid 0.125rem $secondary-color3;
+    }
+
+    @include desktop {
+      margin: 2rem 0 0 7rem;
+      padding: 0;
+    }
+  }
+
+  &__info {
+    display: $display;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 4rem;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 40%;
+    }
+
+    @include desktop {
+      padding: 0;
+      margin: 0;
+    }
+
+    &--date {
+      color: $primary-color3;
+    }
+  }
+  &__card {
+    display: $display;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: $primary-color3;
+    height: 4rem;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 30%;
+    }
+  }
+
+  &__viewcard {
+    display: $display;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 7rem;
+
+    @include tablet {
+      width: 50%;
+      height: 30%;
+    }
+  }
+  &__likecard {
+    display: $display;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 6.5rem;
+
+    @include tablet {
+      width: 45%;
+      height: 30%;
+    }
+  }
+
+  &__text {
+    padding: 1rem 0 1rem 0;
+    margin: 0 1rem 0 1rem;
+    line-height: 130%;
+
+    @include tablet {
+      margin: 0 1.5rem 0 1.5rem;
+      line-height: 150%;
+    }
+
+    @include desktop {
+      padding: 2rem 0 0 7rem;
+      margin: 0;
+      line-height: 180%;
+    }
+  }
+}
