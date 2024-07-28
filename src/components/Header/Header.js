@@ -3,12 +3,15 @@ import logo from "../../assets/Logo/BrainFlix-logo.svg";
 import searchicon from "../../assets/Icons/search.svg";
 import uploadicon from "../../assets/Icons/upload.svg";
 import profile from "../../assets/images/Mohan-muruge.jpg";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className="header">
       <div className="header__logo">
-        <img src={logo} />
+        <NavLink to="/">
+          <img src={logo} alt="logo" />
+        </NavLink>
       </div>
 
       <div class="header__searchContainer">
@@ -24,7 +27,9 @@ const Header = () => {
 
         <div class="header__uploadBar">
           <img src={uploadicon} />
-          <h3 class="header__uploadBar--text">UPLOAD</h3>
+          <h3 class="header__uploadBar--text">
+            <NavLink to="/uploadpage">UPLOAD</NavLink>
+          </h3>
         </div>
       </div>
     </header>

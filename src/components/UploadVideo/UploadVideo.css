@@ -1,0 +1,348 @@
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../../assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+body {
+  font-family: "Avenir Next";
+}
+
+h1 {
+  font-family: "Avenir Next";
+  font-weight: 700;
+}
+
+h2 h3 {
+  font-family: "Avenir Next";
+  font-weight: 700;
+}
+
+h4 a {
+  font-family: "Avenir Next";
+  font-weight: 400;
+}
+
+p {
+  font-family: "Avenir Next";
+  font-weight: 400;
+}
+
+input {
+  font-family: "Avenir Next";
+  font-weight: 400;
+}
+
+textarea {
+  font-family: "Avenir Next";
+  font-weight: 400;
+}
+
+button {
+  font-family: "Avenir Next";
+  font-weight: 600;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.UploadVideo__title {
+  padding: 1.5rem 0 0 1rem;
+  font-size: 1.5rem;
+  border-top: solid 0.063rem #e1e1e1;
+}
+@media screen and (min-width: 768px) {
+  .UploadVideo__title {
+    padding: 2.25rem 1.5rem 2rem 1.5rem;
+    margin-top: 1rem;
+    font-size: 2.063rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .UploadVideo__title {
+    padding: 2rem 0 2rem 7rem;
+    margin-top: 1rem;
+  }
+}
+.UploadVideo__photocontainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+.UploadVideo__photo {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .UploadVideo__photo {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .UploadVideo__photo {
+    width: 55%;
+  }
+}
+.UploadVideo__body {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 1rem 1rem 1rem;
+}
+@media screen and (min-width: 768px) {
+  .UploadVideo__body {
+    padding: 1rem 1.5rem 2.25rem 1.5rem;
+    margin: 0 2rem 0 1.5rem;
+    border-top: solid 0.063rem #e1e1e1;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .UploadVideo__body {
+    padding: 2rem 5rem 2rem 5rem;
+    border: none;
+  }
+}
+.UploadVideo__body--upperpart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-top: solid 0.063rem #e1e1e1;
+  border-bottom: solid 0.063rem #e1e1e1;
+}
+.UploadVideo__formcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .UploadVideo__formcard {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    border-bottom: solid 0.063rem #e1e1e1;
+    padding-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .UploadVideo__formcard {
+    border: none;
+  }
+}
+.UploadVideo__formbody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media screen and (min-width: 768px) {
+  .UploadVideo__formbody {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.UploadVideo__formtitle {
+  color: #afafaf;
+  font-weight: 600;
+  margin: 1rem 0 0.5rem 0;
+}
+.UploadVideo__forminput {
+  width: 100%;
+  height: 8rem;
+  background-color: #fafafa;
+  border-color: #e1e1e1;
+  border-radius: 0.25rem;
+  color: #323232;
+}
+@media screen and (min-width: 768px) {
+  .UploadVideo__forminput {
+    width: 41rem;
+    height: 2rem;
+  }
+  .UploadVideo__forminput--input {
+    height: 6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .UploadVideo__forminput {
+    width: 45rem;
+  }
+}
+.UploadVideo__buttoncard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media screen and (min-width: 768px) {
+  .UploadVideo__buttoncard {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-left: 30%;
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .UploadVideo__buttoncard {
+    justify-content: flex-end;
+  }
+}
+.UploadVideo__buttoncontainer {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0 1rem 0;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .UploadVideo__buttoncontainer {
+    margin: 0;
+  }
+}
+.UploadVideo__buttonicon {
+  border: none;
+  display: flex;
+  background-color: #0095ff;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  color: #ffffff;
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+.UploadVideo__button {
+  border: none;
+  display: flex;
+  background-color: #0095ff;
+  padding: 0.6rem 5rem 0.5rem 5.5rem;
+  color: #ffffff;
+  border-radius: 0 0.25rem 0.25rem 0;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .UploadVideo__button {
+    padding: 0.6rem 2rem 0.5rem 2rem;
+    width: 10rem;
+  }
+}
+.UploadVideo__button2 {
+  border: none;
+  background-color: #ffffff;
+  color: #0095ff;
+  width: 100%;
+}/*# sourceMappingURL=UploadVideo.css.map */

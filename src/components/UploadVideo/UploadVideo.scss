@@ -1,0 +1,179 @@
+@use "../../styles/partials/global.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+
+.UploadVideo {
+  &__title {
+    padding: 1.5rem 0 0 1rem;
+    font-size: 1.5rem;
+    border-top: solid 0.063rem $secondary-color3;
+
+    @include tablet {
+      padding: 2.25rem 1.5rem 2rem 1.5rem;
+      margin-top: 1rem;
+      font-size: 2.063rem;
+    }
+
+    @include desktop {
+      padding: 2rem 0 2rem 7rem;
+      margin-top: 1rem;
+    }
+  }
+
+  &__photocontainer {
+    display: $display;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+
+  &__photo {
+    width: 100%;
+
+    @include tablet {
+      width: 50%;
+    }
+
+    @include desktop {
+      width: 55%;
+    }
+  }
+
+  &__body {
+    display: $display;
+    flex-direction: column;
+    margin: 0.5rem 1rem 1rem 1rem;
+
+    @include tablet {
+      padding: 1rem 1.5rem 2.25rem 1.5rem;
+      margin: 0 2rem 0 1.5rem;
+      border-top: solid 0.063rem $secondary-color3;
+    }
+
+    @include desktop {
+      padding: 2rem 5rem 2rem 5rem;
+
+      border: none;
+    }
+
+    &--upperpart {
+      display: $display;
+      flex-direction: row;
+      justify-content: space-evenly;
+      border-top: solid 0.063rem $secondary-color3;
+      border-bottom: solid 0.063rem $secondary-color3;
+    }
+  }
+
+  &__formcard {
+    display: $display;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include tablet {
+      flex-direction: row;
+      width: 100%;
+      flex-wrap: wrap;
+      border-bottom: solid 0.063rem $secondary-color3;
+      padding-bottom: 1.5rem;
+    }
+
+    @include desktop {
+      border: none;
+    }
+  }
+
+  &__formbody {
+    display: $display;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @include tablet {
+      display: $display;
+      flex-direction: column;
+    }
+  }
+  &__formtitle {
+    color: $primary-color3;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  &__forminput {
+    width: 100%;
+    height: 8rem;
+    background-color: $secondary-color4;
+    border-color: $secondary-color3;
+    border-radius: 0.25rem;
+    color: $primary-color1;
+
+    @include tablet {
+      width: 41rem;
+      height: 2rem;
+
+      &--input {
+        height: 6rem;
+      }
+    }
+
+    @include desktop {
+      width: 45rem;
+    }
+  }
+
+  &__buttoncard {
+    display: $display;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    @include tablet {
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      margin-left: 30%;
+      margin-top: 1.5rem;
+    }
+
+    @include desktop {
+      justify-content: flex-end;
+    }
+  }
+
+  &__buttoncontainer {
+    display: $display;
+    flex-direction: row;
+    margin: 1rem 0 1rem 0;
+    width: 100%;
+
+    @include tablet {
+      margin: 0;
+    }
+  }
+
+  &__buttonicon {
+    border: none;
+    display: $display;
+    background-color: $primary-color2;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    color: $primary-color4;
+    border-radius: 0.25rem 0 0 0.25rem;
+  }
+
+  &__button {
+    border: none;
+    display: $display;
+    background-color: $primary-color2;
+    padding: 0.6rem 5rem 0.5rem 5.5rem;
+    color: $primary-color4;
+    border-radius: 0 0.25rem 0.25rem 0;
+    width: 100%;
+
+    @include desktop {
+      padding: 0.6rem 2rem 0.5rem 2rem;
+      width: 10rem;
+    }
+  }
+  &__button2 {
+    border: none;
+    background-color: $primary-color4;
+    color: $primary-color2;
+    width: 100%;
+  }
+}
