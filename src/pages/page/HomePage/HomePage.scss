@@ -1,0 +1,13 @@
+@use "../../../styles//partials/global.scss" as *;
+@use "../../../styles//partials/mixins.scss" as *;
+
+.HomePage {
+  @include desktop {
+    display: $display;
+    flex-direction: row;
+  }
+
+  &__rightpart {
+    border-left: solid 0.063rem $secondary-color3;
+  }
+}
