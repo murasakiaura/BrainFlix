@@ -168,4 +168,14 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}/*# sourceMappingURL=VideoDetails.css.map */
+}
+
+@media screen and (min-width: 1024px) {
+  .HomePage {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.HomePage__rightpart {
+  border-left: solid 0.063rem #e1e1e1;
+}/*# sourceMappingURL=HomePage.css.map */

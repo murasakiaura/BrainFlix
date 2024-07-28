@@ -2,7 +2,7 @@ import "./Comment.scss";
 import profile from "../../assets/images/Mohan-muruge.jpg";
 import buttonicon from "../../assets/Icons/add_comment.svg";
 
-function Comment({ comments = [0] }) {
+function Comment(props) {
   function convertDate(timestamp) {
     const date = new Date(timestamp);
     return date.toLocaleDateString();
@@ -41,7 +41,7 @@ function Comment({ comments = [0] }) {
         </div>
       </div>
 
-      {comments.map((comment) => (
+      {props.comments.map((comment) => (
         <div key={comment.id} className="comments__videocomments">
           <div className="comments__videocomments--img"></div>
           <div className="comments__videocomments--text">
